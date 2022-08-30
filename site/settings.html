@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Zaluea V2 | Settings</title>
+</head>
+<body>
+    <div class="bar">
+        <div class="btn"><a href="settings.html">Settings</a></div>
+        <div class="btn"><a href="games.html">Games</a></div>
+        <div class="title"><a href="/">Zaluea V2</a></div>
+    </div>
+    <center>
+        <div class="settings_header" style="margin-top: 15%;">Window Settings</div>
+        <input class="settings_input" style="margin-top: 0.5%;" placeholder="Title" onkeyup="setTitle(this.value)">
+        <input class="settings_input" style="margin-top: 0.5%;" placeholder="Image URL" onkeyup="setImage(this.value)">
+        <div class="settings_header" style="margin-top: 1%;">Themes</div>
+        <div class="settings_btn" onclick="setTheme('light')">Light</div>
+        <div class="settings_btn" onclick="setTheme('dark')">Dark</div>
+        <div class="settings_btn_reset" onclick="resetSettings()">Reset Settings (Will require a page reload)</div>
+    </center>
+    <script src="themes.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>
